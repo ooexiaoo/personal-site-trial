@@ -1,0 +1,98 @@
+.home{
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 768px){
+    .home{
+        flex-direction: column;
+    }
+    .title{
+        max-width: 300px;
+    }
+    .hero-image{
+        max-width: 300px;
+    }
+}
+.title{
+    display: flex;
+    height: 250px;
+    min-width: 400px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 25px 40px;
+    transition: box-shadow 1s;
+
+    border-radius: 1rem;
+    background: #deddda;
+    box-shadow:  11px 11px 22px #b8b7b5,
+                 -11px -11px 22px #ffffff;
+}
+.title:hover{
+    box-shadow:  3px 3px 6px #bdbcb9,
+                -3px -3px 6px #fffefb;
+}
+.my-name-is{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title p{
+    font-size: 25px;
+    line-height: 20px;
+    color: rgb(107,107,107);
+    margin: 0;
+}
+.name{
+    font-size: 100px;
+    line-height: 80px;
+    margin: 0;
+
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(107,107,107);
+    background: url(images/Lovepik_com-611703305-Black\ and\ white\ arrow\ free\ icon.png);
+    -webkit-background-clip: text;
+    background-position: 500px;
+    animation: back 100s linear infinite;
+    transition: 0.4s;
+}
+.name:hover{
+    transform: translateY(5px);
+}
+@keyframes back{
+    100%{
+        background-position: 5000px 0;
+    }
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.social-icons img{
+    margin: 5px 0px;
+}
+.hero-image{
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    padding: 10px;
+    margin: 25px 10px;
+
+    border-radius: 125px;
+    background: linear-gradient(145deg, #eeece9, #c8c7c4);
+    box-shadow:  11px 11px 22px #b8b7b5,
+                 -11px -11px 22px #ffffff;
+  
+                 transition: 0.4s;
+}
+.hero-image:hover{
+    box-shadow:  3px 3px 6px #bdbcb9,
+                -3px -3px 6px #fffefb;
+    transform: scale(0.95);
+}
